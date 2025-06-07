@@ -19,32 +19,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-        <head />
-        <body className="antialiased">
-        <header className="p-4 border-b shadow-sm bg-[#F1E5B1]">
-            <nav className="flex items-center justify-between">
-                {/* Left side: Brand/Logo */}
-                <div className="text-2xl font-bold text-green-800">nomu</div>
-
-                {/* Right side: Navigation links */}
-                <div className="flex space-x-4">
-                    <Link href="/" className="text-green-800 hover:underline">
-                        Home
-                    </Link>
-                    <Link href="/about" className="text-green-800 hover:underline">
-                        About
-                    </Link>
-                    <Link href="/products" className="text-green-800 hover:underline">
-                        Products
-                    </Link>
-                </div>
-            </nav>
-        </header>
-
-
-        <main className="p-4">{children}</main>
-
+        <html lang="en">
+        <body className="bg-[#F1E5B1] text-green-800">
+        {children}
         <footer className="bg-[#F1E5B1] w-full">
             <div className="max-w-screen-xl mx-auto p-4">
                 <hr className="my-6 border-t-4  border-green-900" />
